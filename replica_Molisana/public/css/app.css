@@ -32,10 +32,11 @@ header .header_wrapper nav ul li {
   padding: 5px 10px;
   font-size: 18px;
   margin-right: 20px;
+  border-radius: 5px;
 }
 
 header .header_wrapper nav ul li:hover {
-  background: lightblue;
+  background: rgba(45, 197, 248, 0.521);
 }
 
 header .header_wrapper nav ul li a {

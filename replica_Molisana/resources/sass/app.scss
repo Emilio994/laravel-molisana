@@ -25,8 +25,9 @@ header {
                 padding: 5px 10px;
                 font-size: 18px;
                 margin-right: 20px;
+                border-radius: 5px;
                 &:hover {
-                    background: lightblue;
+                    background: rgba(45, 197, 248, 0.521);
                 }
                 a {
                     color: red;
