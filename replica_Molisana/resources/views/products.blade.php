@@ -16,11 +16,11 @@ Prodotti
                 <img src= {{$pasta['src']}} alt="">
             </div>
             <div class="infos">
-                <p> {{ $pasta['titolo'] }}</p>
-                <p>{{ $pasta['tipo'] }}</p>
-                <p>{{ $pasta['cottura'] }}</p>
-                <p>{{ $pasta['peso'] }}</p>
-                <p>{{ $pasta['descrizione'] }}</p>
+                <p> Nome : {{ $pasta['titolo'] }}</p>
+                <p> Tipo : {{ $pasta['tipo'] }}</p>
+                <p> Tempo di cottura : {{ $pasta['cottura'] }}</p>
+                <p> Peso : {{ $pasta['peso'] }}</p>
+                <p> Descrizione : <br> {{ $pasta['descrizione'] }}</p>
             </div>
             
 
