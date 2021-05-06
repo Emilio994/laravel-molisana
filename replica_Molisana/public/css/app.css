@@ -1,3 +1,41 @@
+/* COMMON */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
 header {
-    background: yellow;
+    padding: 10px;
+}
+.header_wrapper .logo {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.header_wrapper nav ul {
+    display: flex;
+    list-style: none;
+}
+.header_wrapper nav ul li {
+    font-size: 18px;
+    margin-right: 20px;
+}
+.header_wrapper nav ul li a {
+    color: red;
+    text-decoration: none;
+}
+.header_wrapper nav ul li a:visited {
+    color: red;
+}
+
+/* MAIN */
+.jumbotron {
+    width: 100%;
+}
+.jumbotron img {
+    width: 100%;
+    object-fit: cover;
 }

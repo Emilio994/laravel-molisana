@@ -5,11 +5,13 @@ Home
 @endsection
 
 @section('header_content')
-    <p>Home Header</p>
+    
 @endsection
 
 @section('main_content')
-    <p>Home Main</p>
+    <div class="jumbotron">
+        <img src="{{asset('img/molisana-home.jpg')}}" alt="">
+    </div>
 @endsection 
 
 @section('footer_content')
