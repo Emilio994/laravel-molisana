@@ -17,4 +17,5 @@
             </ul>
         </nav>
     </div>
+    @yield('header_content')
 </header>
