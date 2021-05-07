@@ -13,11 +13,11 @@ Prodotti
         
         <div class='type_section'>
             <h1> LE {{ strtoupper($key) }}</h1>
-            @foreach ($formato as $key => $pasta)
+            @foreach ($formato as $index => $pasta)
             <div class="product_template">
                 <img src="{{ asset($pasta['src'])}}" alt="{{ $pasta['titolo']}}">
                 <div class="layover">
-                    <a href="{{ route('pagina-dettaglio', ['id' => $key])}}">{{ $pasta['titolo']}}</a>
+                    <a href="{{ route('pagina-dettaglio', ['id' => $index])}}">{{ $pasta['titolo']}}</a>
                 </div>
             </div>
                 
