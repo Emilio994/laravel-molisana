@@ -5,14 +5,14 @@
         </div>
         <nav>
             <ul>
-                <li>
-                    <a href="{{asset('/')}}"> Home </a>
+                <li class='{{ (Request::route()->getName() == 'pagina-home' ) ? 'active' : '' }} '>
+                    <a class='tags' href="{{ route('pagina-home') }}" > Home </a>
                 </li>
-                <li>
-                    <a href="{{asset('/prodotti')}}"> Prodotti </a>
+                <li class='{{ (Request::route()->getName() == 'pagina-prodotti' ) ? 'active' : '' }} '>
+                    <a class='tags' href="{{route('pagina-prodotti') }}" > Prodotti </a>
                 </li>
-                <li>
-                    <a href="{{asset('/news')}}"> News </a>
+                <li class='{{ (Request::route()->getName() == 'pagina-news' ) ? 'active' : '' }} '>
+                    <a class='tags' href="{{route('pagina-news')}}" > News </a>
                 </li>
             </ul>
         </nav>

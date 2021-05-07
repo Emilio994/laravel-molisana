@@ -7,24 +7,22 @@ Prodotti
 @section('header_content')
     
 @endsection
-
 @section('main_content')
     <div class="products_wrapper">
-        @foreach ($paste as $pasta)
-        <div class="product_template">
-            <div class="poster">
-                <img src= {{$pasta['src']}} alt="">
+        @foreach ($formati as $key => $formato)
+        
+        <div class='type_section'>
+            <h1> LE {{ strtoupper($key) }}</h1>
+            @foreach ($formato as $key => $pasta)
+            <div class="product_template">
+                <img src="{{ asset($pasta['src'])}}" alt="{{ $pasta['titolo']}}">
+                <div class="layover">
+                    <a href="{{ route('pagina-dettaglio', ['id' => $key])}}">{{ $pasta['titolo']}}</a>
+                </div>
             </div>
-            <div class="infos">
-                <p> Nome : {{ $pasta['titolo'] }}</p>
-                <p> Tipo : {{ $pasta['tipo'] }}</p>
-                <p> Tempo di cottura : {{ $pasta['cottura'] }}</p>
-                <p> Peso : {{ $pasta['peso'] }}</p>
-                <p> Descrizione : <br> {{ $pasta['descrizione'] }}</p>
-            </div>
-            
-
-        </div>            
+                
+            @endforeach
+        </div>           
         @endforeach
         
     </div>
